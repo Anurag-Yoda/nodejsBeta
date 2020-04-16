@@ -10,8 +10,8 @@ const expressHbs = require("express-handlebars");
 
 app.use(express.static(path.join(__dirname,"public")));
 
-app.engine('handlebars', expressHbs());
-app.set('view engine','handlebars');
+//app.engine('handlebars', expressHbs());
+app.set('view engine','ejs');
 app.set('views','views');
 
 
